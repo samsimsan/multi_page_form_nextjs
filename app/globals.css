@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
     /* Primary */
     --input:red;
@@ -21,6 +23,30 @@
     --White: hsl(0, 0%, 100%)
 }
 
+/* styles/fonts.css */
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
 * {
     transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
 }
