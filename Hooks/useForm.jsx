@@ -32,28 +32,25 @@ const useForm = () => {
     const updateName = (newName) => {
         if (newName == "") {
             console.log("required field");
-            alert("name is a required field");
-        } else {
-            setName(newName);
         }
+        setName(newName);
+
     }
 
     const updateEmail = (newEmail) => {
         if (newEmail == "") {
             console.log("required field");
-            alert("email is a required field");
-        } else {
-            setEmail(newEmail);
         }
+        setEmail(newEmail);
+
     }
 
     const updatePhone = (newPhone) => {
         if (newPhone == "") {
             console.log("required field");
-            alert("Phone number is a required field");
-        } else {
-            setPhone(newPhone);
         }
+        setPhone(newPhone);
+
     }
 
     return { name, updateName, email, updateEmail, phone, updatePhone, plan, setPlan, period, setPeriod, addOnes, setAddOnes }
